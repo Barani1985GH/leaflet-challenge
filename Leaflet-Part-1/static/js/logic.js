@@ -45,7 +45,7 @@ d3.json(link).then(function(data) {
             color_to_fill = "#f6bfa3";
         }
         
-        let cordinates = [dataset[i].geometry.coordinates[0],dataset[i].geometry.coordinates[1]]
+        let cordinates = [dataset[i].geometry.coordinates[1],dataset[i].geometry.coordinates[0]]
         L.circle(cordinates, {
             fillOpacity: 0.9,
             color:'grey',
